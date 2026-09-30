@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#0f2b48"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B2B" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg1)"/>
+  <!-- Grid Lines -->
+  <g opacity="0.1" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+  <!-- Telemetry Chart -->
+  <path d="M 60,320 Q 140,300 200,240 T 340,260 T 480,140 T 600,190 T 740,110" fill="none" stroke="url(#waveGrad)" stroke-width="4" filter="url(#glow)"/>
+  <path d="M 60,320 Q 140,300 200,240 T 340,260 T 480,140 T 600,190 T 740,110 L 740,380 L 60,380 Z" fill="url(#waveGrad)" opacity="0.08"/>
+  <!-- Sensor Nodes -->
+  <circle cx="200" cy="240" r="7" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="480" cy="140" r="8" fill="#FF6B2B" filter="url(#glow)"/>
+  <circle cx="600" cy="190" r="6" fill="#10b981" filter="url(#glow)"/>
+  <circle cx="740" cy="110" r="7" fill="#38bdf8" filter="url(#glow)"/>
+  <!-- UI Card Overlay -->
+  <rect x="70" y="50" width="300" height="120" rx="14" fill="#091424" fill-opacity="0.85" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="95" cy="75" r="5" fill="#10b981"/>
+  <text x="110" y="79" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="600">KIJANIBOX • TELEMETRY ACTIVE</text>
+  <text x="95" y="115" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold">Water Level: 84.6%</text>
+  <text x="95" y="145" fill="#FF6B2B" font-family="sans-serif" font-size="13" font-weight="bold">Hysteresis Alert • Solenoid Valve Triggered</text>
+  <!-- Mini Badge -->
+  <rect x="580" y="50" width="150" height="38" rx="19" fill="#FF6B2B" fill-opacity="0.2" stroke="#FF6B2B" stroke-width="1"/>
+  <text x="655" y="74" fill="#FF8F5C" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Kijani Hackathon</text>
+</svg>
