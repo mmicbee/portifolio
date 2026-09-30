@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Information -->
+  <title>Millicent Odhiambo — Software Developer | Go, Python, Web & IoT</title>
+  <meta name="description" content="Portfolio of Millicent Odhiambo (mmicbee) — Software Developer specializing in Go, Python, REST APIs, IoT telemetry, and modern web applications.">
+  <meta name="keywords" content="Millicent Odhiambo, mmicbee, Software Developer, Go developer, Python developer, Kenya developer, Zone01 Kisumu, IoT, FinTech, Tailwind CSS">
+  <meta name="author" content="Millicent Odhiambo">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="Millicent Odhiambo — Software Developer">
+  <meta property="og:description" content="Software Developer focused on building practical, user-centered software solutions with Go, Python, React, and IoT.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/mmicbee/portifolio">
+  <meta property="og:image" content="images/profile-banner.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: PT Sans (Display) & DM Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tailwind Custom Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['PT Sans', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif']
+          },
+          colors: {
+            accent: '#FF6B2B',
+            'accent-light': '#FF8F5C',
+            'accent-dark': '#E05316'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased selection:bg-accent selection:text-white">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HEADER & NAVIGATION
+       ═══════════════════════════════════════════════════════════════ -->
+  <header id="header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto px-6 h-16 sm:h-20 flex items-center justify-between" aria-label="Main navigation">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="font-display font-bold text-xl sm:text-2xl tracking-tight relative z-10 flex items-center gap-1.5 group">
+        <span class="text-zinc-900 dark:text-white transition-colors">milli</span><span class="text-accent group-hover:text-accent-light transition-colors">odhiambo</span>
+        <span class="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-mono px-2 py-0.5 rounded-full ml-1 border border-zinc-200 dark:border-zinc-800">dev</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="hidden lg:flex items-center gap-7 text-sm font-medium" role="list">
+        <li><a href="#services" class="desktop-nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Services</a></li>
+        <li><a href="#work" class="desktop-nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Work</a></li>
+        <li><a href="#skills" class="desktop-nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Skills</a></li>
+        <li><a href="#writing" class="desktop-nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Writing</a></li>
+        <li><a href="#about" class="desktop-nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">About</a></li>
+        <li><a href="#contact" class="desktop-nav-link nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">Contact</a></li>
+      </ul>
+
+      <!-- Action Items (Theme Toggle, CV Download, Hire Me Button, Mobile Trigger) -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        
+        <!-- Dark / Light Mode Switcher -->
+        <button id="theme-toggle" class="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-colors" aria-label="Toggle theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="icon-sun w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="icon-moon w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- CV Button -->
+        <a href="Millicent Odhiambo_CV.pdf" download="Millicent_Odhiambo_CV.pdf" class="hidden sm:inline-flex items-center gap-1.5 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:border-zinc-400 dark:hover:border-zinc-600 text-xs sm:text-sm font-medium px-4 py-2 rounded-full transition-colors">
+          <svg class="w-3.5 h-3.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          <span>CV</span>
+        </a>
+
+        <!-- Hire Me CTA -->
+        <a href="#contact" class="hidden md:inline-flex items-center gap-2 shimmer bg-accent text-white text-xs sm:text-sm font-medium px-5 py-2.5 rounded-full hover:bg-accent-light transition-colors shadow-sm">
+          <span>Let's talk</span>
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors" aria-expanded="false" aria-label="Toggle navigation menu">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white/95 dark:bg-zinc-950/95 backdrop-blur-xl border-b border-zinc-100 dark:border-zinc-900 transition-all duration-300">
+      <ul class="flex flex-col px-6 py-6 gap-4 text-base font-medium" role="list">
+        <li><a href="#services" class="mobile-nav-link block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Services</a></li>
+        <li><a href="#work" class="mobile-nav-link block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Work</a></li>
+        <li><a href="#skills" class="mobile-nav-link block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Skills &amp; Tech Stack</a></li>
+        <li><a href="#writing" class="mobile-nav-link block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Technical Writing</a></li>
+        <li><a href="#about" class="mobile-nav-link block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">About &amp; Background</a></li>
+        <li><a href="#contact" class="mobile-nav-link block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Contact</a></li>
+        <li class="pt-3 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-between gap-3">
+          <a href="Millicent Odhiambo_CV.pdf" download="Millicent_Odhiambo_CV.pdf" class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-4 py-2.5 rounded-full text-sm font-medium">
+            <svg class="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            Download CV
+          </a>
+          <a href="#contact" class="mobile-nav-link inline-flex shimmer bg-accent text-white font-medium text-sm px-5 py-2.5 rounded-full">
+            Let's talk →
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="hero" class="relative min-h-[92vh] flex items-center pt-24 pb-16 overflow-hidden">
+      <!-- Ambient Glow Orbs -->
+      <div class="absolute top-1/4 right-0 w-96 h-96 bg-accent/10 dark:bg-accent/15 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute bottom-1/4 left-0 w-72 h-72 bg-zinc-200/50 dark:bg-zinc-800/40 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-6 w-full">
+        <div class="grid md:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+          <!-- Left Column: Bio & Introduction -->
+          <div class="md:col-span-7">
+            
+            <!-- Availability Status Pill -->
+            <div class="reveal inline-flex items-center gap-2.5 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs px-3.5 py-1.5 rounded-full mb-6 font-medium">
+              <span class="pulse-dot"></span>
+              <span>Available for Software Developer roles &amp; projects</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="reveal d1 font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-zinc-900 dark:text-white leading-[1.08] tracking-tight mb-6">
+              Building resilient backends, APIs, &amp; practical web systems.
+            </h1>
+
+            <!-- Narrative Paragraph -->
+            <p class="reveal d2 text-base sm:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8 max-w-xl">
+              I'm <strong class="text-zinc-900 dark:text-white font-semibold">Millicent Odhiambo</strong> — a Software Developer focused on building practical, user-centered solutions through project-based and collaborative engineering. Experienced with <span class="text-zinc-900 dark:text-zinc-200 font-medium">Go, Python, REST APIs, JavaScript/React, SQL,</span> and real-world <span class="text-zinc-900 dark:text-zinc-200 font-medium">IoT telemetry</span>.
+            </p>
+
+            <!-- Action CTAs -->
+            <div class="reveal d3 flex flex-wrap items-center gap-3.5 mb-10">
+              <a href="#work" class="inline-flex items-center gap-2 shimmer bg-accent text-white font-medium px-6 py-3.5 rounded-full hover:bg-accent-light transition-colors text-sm shadow-md shadow-accent/20">
+                <span>Selected work</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+              </a>
+
+              <a href="Millicent Odhiambo_CV.pdf" download="Millicent_Odhiambo_CV.pdf" class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 hover:border-zinc-500 dark:hover:border-zinc-500 text-zinc-800 dark:text-zinc-200 font-medium px-6 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">
+                <svg class="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <span>Download CV</span>
+              </a>
+
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white font-medium px-4 py-3.5 transition-colors text-sm nl">
+                <span>Get in touch →</span>
+              </a>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="reveal d4 flex flex-wrap items-center gap-4 text-xs text-zinc-500 dark:text-zinc-400 pt-6 border-t border-zinc-100 dark:border-zinc-900">
+              <span class="font-medium text-zinc-700 dark:text-zinc-300">Connect:</span>
+              
+              <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-accent transition-colors">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/millicent-odhiambo-a306552a7/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-accent transition-colors">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="https://dev.to/mmicbee" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-accent transition-colors">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M7.42 10.05c-.18-.12-.46-.23-.85-.23H5.21v4.36h1.34c.41 0 .7-.11.88-.24.28-.2.43-.54.43-1.04v-1.81c0-.52-.15-.85-.44-1.04zm7.39 0c-.18-.12-.46-.23-.85-.23h-1.36v4.36h1.34c.41 0 .7-.11.88-.24.28-.2.43-.54.43-1.04v-1.81c0-.52-.15-.85-.44-1.04zM24 6.54v10.92c0 2.5-2.04 4.54-4.54 4.54H4.54C2.04 22 0 19.96 0 17.46V6.54C0 4.04 2.04 2 4.54 2h14.92c2.5 0 4.54 2.04 4.54 4.54zM8.88 12.91c0-.75-.24-1.35-.73-1.78.36-.37.56-.89.56-1.53 0-.81-.31-1.44-.92-1.86-.6-.41-1.44-.62-2.51-.62H2.39v9.76h3.04c1.08 0 1.94-.23 2.54-.68.61-.45.91-1.09.91-1.93v-1.36zm4.98-4.03h-3.6v9.76h3.6c1.17 0 2.08-.34 2.74-1.02.66-.67.99-1.61.99-2.82v-2.08c0-1.21-.33-2.15-.99-2.82-.66-.68-1.57-1.02-2.74-1.02zm8.75 3.32h-3.32v-1.56h3.1v-1.76h-3.1v-1.48h3.32V5.72h-5.26v9.76h5.26v-1.68z"/></svg>
+                <span>Dev.to</span>
+              </a>
+
+              <button class="copy-btn hover:text-accent transition-colors" data-copy-text="ann608888@gmail.com" data-copy-label="Email">
+                <span>Email 📋</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual Photo Frame & Floating Cards -->
+          <div class="md:col-span-5 reveal d2 flex justify-center lg:justify-end">
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+              
+              <!-- Profile Photo Frame -->
+              <div class="pf w-full h-full rounded-3xl shadow-2xl border-4 border-zinc-100 dark:border-zinc-800/80">
+                <img src="images/profile-hero.jpg" alt="Millicent Odhiambo — Software Developer" loading="eager" class="object-cover object-center">
+              </div>
+
+              <!-- Floating Opportunity Badge -->
+              <div class="absolute -bottom-4 -left-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-display font-bold text-xs sm:text-sm px-4 py-2.5 rounded-2xl shadow-xl border border-zinc-700 dark:border-zinc-300 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-accent animate-pulse"></span>
+                <span>Software Developer • Kenya 🇰🇪</span>
+              </div>
+
+              <!-- Top Floating Badge -->
+              <div class="absolute -top-3 -right-3 bg-accent text-white font-display font-bold text-xs px-3.5 py-1.5 rounded-xl shadow-lg">
+                Zone01 Kisumu Fellow
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Stats Row -->
+        <div class="reveal d4 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-16 pt-10 border-t border-zinc-100 dark:border-zinc-900">
+          <div>
+            <p class="font-display font-bold text-3xl sm:text-4xl text-zinc-900 dark:text-white">12+</p>
+            <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">Git Repositories &amp; Tools</p>
+          </div>
+          <div>
+            <p class="font-display font-bold text-3xl sm:text-4xl text-zinc-900 dark:text-white">4+</p>
+            <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">Technical Articles on Dev.to</p>
+          </div>
+          <div>
+            <p class="font-display font-bold text-3xl sm:text-4xl text-accent">100%</p>
+            <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">Peer-Reviewed Zone01 Rigor</p>
+          </div>
+          <div>
+            <p class="font-display font-bold text-3xl sm:text-4xl text-zinc-900 dark:text-white">Full-Stack</p>
+            <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">Go, Python, Web &amp; IoT</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SERVICES SECTION (What I Do)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="services" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="mb-14">
+          <p class="reveal text-xs font-semibold text-accent tracking-widest uppercase mb-3">Core Competencies</p>
+          <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">What I bring to the table</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <!-- Card 1: Backend & APIs -->
+          <article class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
+            <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
+              <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Backend &amp; API Engineering</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+              Building concurrent, testable backend architectures with <strong class="text-zinc-700 dark:text-zinc-200">Go</strong> and <strong class="text-zinc-700 dark:text-zinc-200">Python (FastAPI)</strong>. Clean RESTful API design, database schemas (PostgreSQL, SQLite), custom session management, and authentication layers.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">Go</span>
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">FastAPI</span>
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">REST APIs</span>
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">SQL</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Modern Frontend & UI -->
+          <article class="reveal d2 card-h group bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800 hover:border-accent">
+            <div class="w-12 h-12 flex items-center justify-center bg-zinc-800 dark:bg-zinc-700 rounded-xl mb-6 group-hover:bg-accent/20 transition-colors">
+              <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white mb-3">Modern Frontend &amp; Web Apps</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+              Accessible, responsive web experiences with semantic HTML5, modern CSS3, <strong class="text-white">Tailwind CSS</strong>, and modern JavaScript (ES Modules) or <strong class="text-white">React</strong>. Zero unnecessary bloat, fast load times, and dynamic user feedback.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[11px] bg-zinc-800 text-zinc-300 px-2 py-0.5 rounded">JavaScript ES6+</span>
+              <span class="text-[11px] bg-zinc-800 text-zinc-300 px-2 py-0.5 rounded">React</span>
+              <span class="text-[11px] bg-zinc-800 text-zinc-300 px-2 py-0.5 rounded">Tailwind CSS</span>
+              <span class="text-[11px] bg-zinc-800 text-zinc-300 px-2 py-0.5 rounded">HTML5/CSS3</span>
+            </div>
+          </article>
+
+          <!-- Card 3: IoT & Real-time Systems -->
+          <article class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
+            <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
+              <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">IoT Telemetry &amp; Real-Time Data</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+              Streaming sensor data pipelines, automated solenoid valve control with hysteresis logic, Redis-backed alert queuing, and Server-Sent Events (SSE). Experience demonstrated at the Kijani Hackathon.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">IoT Telemetry</span>
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">Redis</span>
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">SSE</span>
+              <span class="text-[11px] bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2 py-0.5 rounded">Sensors</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SELECTED WORK / PROJECTS SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="work" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <!-- Header & Category Filter Tabs -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <p class="reveal text-xs font-semibold text-accent tracking-widest uppercase mb-3">Portfolio</p>
+            <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">Selected work</h2>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="reveal d2 flex flex-wrap gap-2">
+            <button class="filter-btn active text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="all">All</button>
+            <button class="filter-btn text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="backend">Backend &amp; APIs</button>
+            <button class="filter-btn text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="iot">IoT &amp; Full-Stack</button>
+            <button class="filter-btn text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="fintech">FinTech &amp; Systems</button>
+          </div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="grid md:grid-cols-2 gap-7">
+
+          <!-- PROJECT 1: BIONODE (Featured Hero Card) -->
+          <article class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent md:row-span-2 flex flex-col justify-between" data-categories="iot backend">
+            <div>
+              <div class="pf w-full h-64 sm:h-72">
+                <img src="images/project-bionode.svg" alt="Bionode IoT Flood and Water Pollution Warning System" loading="lazy">
+              </div>
+              <div class="p-7">
+                <div class="flex flex-wrap items-center gap-2 mb-4">
+                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">IoT &amp; Telemetry</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Python / FastAPI</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Redis + SSE</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-2">Bionode — IoT Flood &amp; Pollution Early Warning System</h3>
+                <p class="text-xs font-semibold text-accent mb-3">Built at Kijani Hackathon 2024</p>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+                  An IoT-based early warning system using a custom "KijaniBox" sensor to stream live water-level and turbidity readings. Built the FastAPI backend implementing automated diversion-valve triggers with hysteresis, pollution-spike detection, Redis alert queuing, and real-time Server-Sent Events dashboard.
+                </p>
+                
+                <ul class="text-xs text-zinc-500 dark:text-zinc-400 space-y-2 mb-6">
+                  <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Automated diversion-valve logic with hysteresis</li>
+                  <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Real-time streaming via Server-Sent Events (SSE)</li>
+                  <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Satellite soil-saturation &amp; SQLAlchemy telemetry models</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="px-7 pb-7 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
+              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="bionode">
+                <span>View deep dive</span>
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: IDINEX -->
+          <article class="project-card card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="backend">
+            <div>
+              <div class="pf w-full h-48 sm:h-52">
+                <img src="images/project-idinex.svg" alt="Idinex Idea Cataloguing Platform" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">Go Backend</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">REST APIs</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">ES Modules</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Idinex — Idea Cataloguing Platform</h3>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  A collaborative idea catalog where users submit, browse, and refine ideas together. Implemented a robust Go backend with full CRUD endpoints and an auth service layer, plus a vanilla JavaScript ES modules frontend with a password strength meter and dynamic validation.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
+              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="idinex">
+                <span>View deep dive</span>
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: AFRIPAY -->
+          <article class="project-card card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="fintech backend">
+            <div>
+              <div class="pf w-full h-48 sm:h-52">
+                <img src="images/project-afripay.svg" alt="AfriPay FinTech Lightning Payments" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">FinTech</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Go</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Bitcoin Lightning</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">AfriPay — Cross-Border Payments on Lightning</h3>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  A collaborative fintech initiative exploring low-cost cross-border payments for African businesses. Built payment flows using Go, Bitcoin Lightning Network micro-settlements, local-currency conversion quotes, and business analytics.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
+              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="afripay">
+                <span>View deep dive</span>
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <a href="https://github.com/mmicbee/-bitcoin" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: SMART HOUSE HUNT -->
+          <article class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="backend iot">
+            <div>
+              <div class="pf w-full h-48 sm:h-52">
+                <img src="images/project-smarthouse.svg" alt="Smart House Hunt Kenya" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">Go Platform</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">AI Matching</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Kenya</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Smart-House-Hunt — AI Rental Platform</h3>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  An AI-powered house rental platform tailored for the Kenyan market. Eliminates deceptive agent markups and unreliable listings by providing verified property indexing, proximity mapping, and streamlined Go endpoints.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
+              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="smarthouse">
+                <span>View deep dive</span>
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <a href="https://github.com/mmicbee/Smart-house-hunt" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: CFTFIP -->
+          <article class="project-card card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="frontend">
+            <div>
+              <div class="pf w-full h-48 sm:h-52">
+                <img src="images/project-cftfip.svg" alt="Care for the Future Integrated Project" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">Frontend</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Semantic HTML5</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">JavaScript</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">CFTFIP — Care for the Future Integrated Portal</h3>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  Structured online digital platform developed to present community initiatives, organizational services, and impact reports through clean UI architecture, responsive layouts, and interactive navigation.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
+              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="cftfip">
+                <span>View deep dive</span>
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <a href="https://github.com/mmicbee/CFTFIP" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: GO SYSTEMS PROGRAMMING & ZONE01 -->
+          <article class="project-card card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="fintech backend">
+            <div>
+              <div class="pf w-full h-48 sm:h-52">
+                <img src="images/project-systems.svg" alt="Go Systems Programming at Zone01" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">Systems</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Go Algorithms</span>
+                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Zone01</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Zone01 Systems &amp; Low-Level Tooling</h3>
+                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  Push-swap (algorithmic two-stack sorter), Groupie-tracker (concurrent REST synchronizer), and Go-reloaded (text transformer &amp; parser) built under strict algorithmic constraints and peer reviews at Zone01 Kisumu.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
+              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="systems">
+                <span>View deep dive</span>
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- GitHub Profile Banner CTA -->
+        <div class="reveal mt-12 text-center">
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 mb-3">Looking for more source code, commits, and experiments?</p>
+          <a href="https://github.com/mmicbee?tab=repositories" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-white hover:text-accent dark:hover:text-accent transition-colors nl">
+            <span>Explore all repositories on GitHub (@mmicbee)</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SKILLS & TECH STACK SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="skills" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="mb-14">
+          <p class="reveal text-xs font-semibold text-accent tracking-widest uppercase mb-3">Toolbox</p>
+          <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">Skills &amp; Tech Stack</h2>
+          <p class="reveal d2 text-sm sm:text-base text-zinc-500 dark:text-zinc-400 mt-2 max-w-xl">
+            A battle-tested set of languages, frameworks, and developer tools honed through continuous building and peer evaluations.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Category 1: Languages & Core -->
+          <div class="reveal d1 bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-200/80 dark:border-zinc-800">
+            <div class="w-10 h-10 rounded-xl bg-orange-50 dark:bg-zinc-800 flex items-center justify-center mb-5 text-accent font-mono font-bold text-sm">
+              &lt;/&gt;
+            </div>
+            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Languages</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Go (Golang)</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Python</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">JavaScript (ES6+)</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">TypeScript</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">SQL</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Bash / Shell</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & APIs -->
+          <div class="reveal d2 bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-200/80 dark:border-zinc-800">
+            <div class="w-10 h-10 rounded-xl bg-orange-50 dark:bg-zinc-800 flex items-center justify-center mb-5 text-accent font-mono font-bold text-sm">
+              API
+            </div>
+            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Backend &amp; Data</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">FastAPI</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">RESTful APIs</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">PostgreSQL</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">SQLite</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Redis</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">SQLAlchemy</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend & UI -->
+          <div class="reveal d3 bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-200/80 dark:border-zinc-800">
+            <div class="w-10 h-10 rounded-xl bg-orange-50 dark:bg-zinc-800 flex items-center justify-center mb-5 text-accent font-mono font-bold text-sm">
+              UI
+            </div>
+            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Frontend &amp; UI</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">HTML5 Semantic</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">CSS3 / Flex / Grid</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Tailwind CSS</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">React</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">ES Modules</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Responsive UX</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Platforms -->
+          <div class="reveal d4 bg-white dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-200/80 dark:border-zinc-800">
+            <div class="w-10 h-10 rounded-xl bg-orange-50 dark:bg-zinc-800 flex items-center justify-center mb-5 text-accent font-mono font-bold text-sm">
+              OPS
+            </div>
+            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-3">Tools &amp; Workflow</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Git &amp; GitHub</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Linux (Ubuntu/Debian)</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Docker</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">Postman</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">VS Code</span>
+              <span class="stag text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 px-3 py-1.5 rounded-full font-medium">CI/CD Workflows</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         TECHNICAL WRITING / DEV.TO ARTICLES SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="writing" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
+          <div>
+            <p class="reveal text-xs font-semibold text-accent tracking-widest uppercase mb-3">Thoughts &amp; Deep Dives</p>
+            <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">Technical Writing</h2>
+            <p class="reveal d2 text-sm text-zinc-500 dark:text-zinc-400 mt-2">Articles I've written on GreenTech, systems compilers, networking, and engineering bootcamps.</p>
+          </div>
+          <a href="https://dev.to/mmicbee" target="_blank" rel="noopener noreferrer" class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl">
+            All Dev.to articles →
+          </a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Article 1: Carbon Emissions & GreenTech -->
+          <article class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
+            <div>
+              <div class="pf w-full h-44">
+                <img src="images/blog-carbon.png" alt="How Technology Can Help SMEs Measure Their Carbon Emissions" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
+                  <span class="bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-0.5 rounded-full font-medium">GreenTech</span>
+                  <span>Sep 1, 2026 • 8m</span>
+                </div>
+                <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors leading-snug">
+                  How Technology Can Help SMEs Measure Their Carbon Emissions
+                </h3>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+                  Why climate tech cannot be limited to large conglomerates, and how IoT and telemetry can unlock affordable carbon tracking for African SMEs.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-2">
+              <a href="https://dev.to/mmicbee/how-technology-can-help-smes-measure-their-carbon-emissions-371c" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-900 dark:text-white group-hover:text-accent transition-colors nl">
+                Read on Dev.to →
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2: Compilation 1.0 -->
+          <article class="reveal d2 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
+            <div>
+              <div class="pf w-full h-44">
+                <img src="images/blog-compilation.png" alt="Compilation 1.0" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
+                  <span class="bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-0.5 rounded-full font-medium">Compilers</span>
+                  <span>Aug 17, 2026 • 4m</span>
+                </div>
+                <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors leading-snug">
+                  Compilation 1.0: What Happens When You Hit Compile
+                </h3>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+                  Demystifying the build pipeline — from pre-processing and abstract syntax trees to assembly, object files, and linking binaries.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-2">
+              <a href="https://dev.to/mmicbee/compilation-10-4de8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-900 dark:text-white group-hover:text-accent transition-colors nl">
+                Read on Dev.to →
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3: DNS -->
+          <article class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
+            <div>
+              <div class="pf w-full h-44">
+                <img src="images/blog-dns.png" alt="Gaslighted Into Learning DNS" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
+                  <span class="bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-0.5 rounded-full font-medium">Networking</span>
+                  <span>Jul 12, 2026 • 3m</span>
+                </div>
+                <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors leading-snug">
+                  I Was Basically Gaslighted Into Learning DNS...
+                </h3>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+                  A humorous yet technical journey into resolvers, authoritative nameservers, propagation caching, and understanding the web's phonebook.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-2">
+              <a href="https://dev.to/mmicbee/i-was-basically-gaslighted-into-learning-dns-and-im-glad-i-was-15pp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-900 dark:text-white group-hover:text-accent transition-colors nl">
+                Read on Dev.to →
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 4: Bootcamp Journey -->
+          <article class="reveal d4 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
+            <div>
+              <div class="pf w-full h-44">
+                <img src="images/blog-bootcamp.png" alt="My First Day at a Developer Bootcamp" loading="lazy">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
+                  <span class="bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-0.5 rounded-full font-medium">Bootcamp</span>
+                  <span>Jun 14, 2026 • 2m</span>
+                </div>
+                <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors leading-snug">
+                  My First Day at a Developer Bootcamp
+                </h3>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+                  Real experiences navigating the initial steep learning curve, peer-to-peer coding pressures, and building psychological safety.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 pb-6 pt-2">
+              <a href="https://dev.to/mmicbee/my-first-day-at-a-developer-bootcamp-what-i-experienced-as-a-beginner-4ion" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-900 dark:text-white group-hover:text-accent transition-colors nl">
+                Read on Dev.to →
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         ABOUT ME & EDUCATION SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="about" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+
+          <!-- Left: Portrait Photo -->
+          <div class="reveal order-2 md:order-1 flex justify-center">
+            <div class="relative w-full max-w-sm">
+              <div class="pf aspect-square w-full rounded-3xl shadow-xl border-4 border-white dark:border-zinc-800">
+                <img src="images/profile-about.jpg" alt="Millicent Odhiambo" loading="lazy" class="object-cover object-center">
+              </div>
+              <div class="absolute -bottom-5 -right-5 bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-xl border border-zinc-200 dark:border-zinc-700 hidden sm:block">
+                <p class="text-xs text-zinc-400 uppercase font-semibold">Location</p>
+                <p class="text-sm font-bold text-zinc-900 dark:text-white">Kenya 🇰🇪 (EAT / UTC+3)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Story, Philosophy & Education -->
+          <div class="order-1 md:order-2">
+            <p class="reveal text-xs font-semibold text-accent tracking-widest uppercase mb-3">About Me</p>
+            <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white leading-tight mb-6">
+              Turning complex ideas into working, practical software.
+            </h2>
+            
+            <p class="reveal d2 text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4 text-sm sm:text-base">
+              I am a Software Developer driven by solving real-world challenges. My approach is rooted in peer-to-peer, project-intensive training at <strong class="text-zinc-900 dark:text-white">Zone01 Kisumu</strong>, combined with foundational computer science principles through a <strong class="text-zinc-900 dark:text-white">Diploma in ICT from Masinde Muliro University of Science and Technology</strong>.
+            </p>
+
+            <p class="reveal d3 text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6 text-sm sm:text-base">
+              I believe resilient software starts with thoughtful data modeling, lean APIs, and empathetic UX. Whether designing telemetry micro-services to monitor flood gates, exploring low-fee cross-border payments with Bitcoin Lightning, or writing in-depth technical guides for fellow developers, I relish learning through hands-on building.
+            </p>
+
+            <!-- Education & Training Timeline Cards -->
+            <div class="reveal d4 space-y-4 pt-2">
+              <div class="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-orange-50 dark:bg-zinc-800 flex items-center justify-center text-accent shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-zinc-900 dark:text-white text-sm">Software Development Training</h4>
+                  <p class="text-xs text-accent font-medium">Zone01 Kisumu</p>
+                  <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Intensive, project-based curriculum emphasizing Go, algorithms, web technologies, and peer-to-peer code reviews.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-orange-50 dark:bg-zinc-800 flex items-center justify-center text-accent shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-display font-bold text-zinc-900 dark:text-white text-sm">Diploma in ICT (DICT)</h4>
+                  <p class="text-xs text-accent font-medium">Masinde Muliro University of Science and Technology</p>
+                  <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Comprehensive computing foundation covering systems analysis, relational database design, network architecture, and software principles.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         CONTACT SECTION (Let's Work Together)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section id="contact" class="py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="bg-zinc-900 dark:bg-zinc-900/90 text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden border border-zinc-800 shadow-2xl">
+          
+          <!-- Background Glows -->
+          <div class="absolute top-0 right-0 w-80 h-80 bg-accent/20 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+          <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
+
+          <div class="relative z-10 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+            <!-- Left Info Column -->
+            <div class="lg:col-span-5">
+              <p class="reveal text-xs font-semibold text-accent tracking-widest uppercase mb-3">Get in touch</p>
+              <h2 class="reveal d1 font-display font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
+                Let's build<br>something great.
+              </h2>
+              <p class="reveal d2 text-zinc-400 text-sm sm:text-base leading-relaxed mb-8">
+                I'm actively open to full-time Software Developer roles, backend engineering contracts, and collaborative tech projects. Have an idea or an open position? Let's talk.
+              </p>
+
+              <!-- Quick Direct Contact List -->
+              <div class="reveal d3 space-y-4">
+
+                <!-- Email Link & Copy -->
+                <div class="group flex items-center justify-between p-3.5 rounded-xl bg-zinc-800/80 border border-zinc-700/60 hover:border-accent transition-colors">
+                  <a href="mailto:ann608888@gmail.com" class="flex items-center gap-3 text-zinc-300 hover:text-white transition-colors">
+                    <span class="w-9 h-9 flex items-center justify-center bg-zinc-700/80 rounded-lg text-accent group-hover:bg-accent group-hover:text-white transition-colors shrink-0">
+                      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </span>
+                    <div>
+                      <p class="text-[11px] text-zinc-400">Direct Email</p>
+                      <p class="text-sm font-medium">ann608888@gmail.com</p>
+                    </div>
+                  </a>
+                  <button class="copy-btn text-xs text-zinc-400 hover:text-accent font-medium px-2.5 py-1.5 rounded bg-zinc-700/50 hover:bg-zinc-700 transition-colors" data-copy-text="ann608888@gmail.com" data-copy-label="Email">
+                    Copy
+                  </button>
+                </div>
+
+                <!-- Phone Link & Copy -->
+                <div class="group flex items-center justify-between p-3.5 rounded-xl bg-zinc-800/80 border border-zinc-700/60 hover:border-accent transition-colors">
+                  <a href="tel:+254768035007" class="flex items-center gap-3 text-zinc-300 hover:text-white transition-colors">
+                    <span class="w-9 h-9 flex items-center justify-center bg-zinc-700/80 rounded-lg text-accent group-hover:bg-accent group-hover:text-white transition-colors shrink-0">
+                      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    </span>
+                    <div>
+                      <p class="text-[11px] text-zinc-400">Phone &amp; WhatsApp</p>
+                      <p class="text-sm font-medium">+254 768 035 007</p>
+                    </div>
+                  </a>
+                  <button class="copy-btn text-xs text-zinc-400 hover:text-accent font-medium px-2.5 py-1.5 rounded bg-zinc-700/50 hover:bg-zinc-700 transition-colors" data-copy-text="+254768035007" data-copy-label="Phone Number">
+                    Copy
+                  </button>
+                </div>
+
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/millicent-odhiambo-a306552a7/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 p-3.5 rounded-xl bg-zinc-800/80 border border-zinc-700/60 hover:border-accent text-zinc-300 hover:text-white transition-colors">
+                  <span class="w-9 h-9 flex items-center justify-center bg-zinc-700/80 rounded-lg text-accent group-hover:bg-accent group-hover:text-white transition-colors shrink-0">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </span>
+                  <div>
+                    <p class="text-[11px] text-zinc-400">Professional Profile</p>
+                    <p class="text-sm font-medium">linkedin.com/in/millicent-odhiambo</p>
+                  </div>
+                </a>
+
+                <!-- GitHub Link -->
+                <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 p-3.5 rounded-xl bg-zinc-800/80 border border-zinc-700/60 hover:border-accent text-zinc-300 hover:text-white transition-colors">
+                  <span class="w-9 h-9 flex items-center justify-center bg-zinc-700/80 rounded-lg text-accent group-hover:bg-accent group-hover:text-white transition-colors shrink-0">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </span>
+                  <div>
+                    <p class="text-[11px] text-zinc-400">Open Source &amp; Code</p>
+                    <p class="text-sm font-medium">github.com/mmicbee</p>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Right Form Column -->
+            <div class="lg:col-span-7 reveal d2">
+              
+              <!-- Form Success State (hidden initially) -->
+              <div id="form-success" class="hidden p-8 rounded-2xl bg-zinc-800 border border-accent/40 text-center">
+                <div class="w-14 h-14 mx-auto rounded-full bg-accent/20 flex items-center justify-center text-accent mb-4">
+                  <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white mb-2">Message Prepared!</h3>
+                <p class="text-sm text-zinc-300 mb-6 max-w-md mx-auto">
+                  Thank you! You can trigger your default mail client with prefilled details, or I will get back to your email directly.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                  <a id="direct-mailto-link" href="#" class="inline-flex items-center gap-2 shimmer bg-accent text-white font-medium text-sm px-6 py-3 rounded-xl hover:bg-accent-light transition-colors">
+                    Send via Email App ✉️
+                  </a>
+                  <button id="form-reset-btn" class="inline-flex items-center gap-2 border border-zinc-700 text-zinc-300 hover:text-white text-sm px-5 py-3 rounded-xl hover:bg-zinc-700/50 transition-colors">
+                    Send Another Message
+                  </button>
+                </div>
+              </div>
+
+              <!-- Interactive Contact Form -->
+              <form id="contact-form" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="fname" class="block text-xs font-medium text-zinc-400 mb-1.5">Your Name <span class="text-accent">*</span></label>
+                    <input type="text" id="fname" name="name" placeholder="Jane Doe" required autocomplete="name"
+                      class="w-full bg-zinc-800/90 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-500 focus:outline-none focus:border-accent transition-colors">
+                  </div>
+                  <div>
+                    <label for="femail" class="block text-xs font-medium text-zinc-400 mb-1.5">Your Email <span class="text-accent">*</span></label>
+                    <input type="email" id="femail" name="email" placeholder="jane@example.com" required autocomplete="email"
+                      class="w-full bg-zinc-800/90 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-500 focus:outline-none focus:border-accent transition-colors">
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="fsubject" class="block text-xs font-medium text-zinc-400 mb-1.5">Subject</label>
+                    <input type="text" id="fsubject" name="subject" placeholder="Role opening / Project collaboration"
+                      class="w-full bg-zinc-800/90 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-500 focus:outline-none focus:border-accent transition-colors">
+                  </div>
+                  <div>
+                    <label for="fproject-type" class="block text-xs font-medium text-zinc-400 mb-1.5">Area of Interest</label>
+                    <select id="fproject-type" name="interest"
+                      class="w-full bg-zinc-800/90 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 focus:outline-none focus:border-accent transition-colors">
+                      <option value="Full-Time Software Developer Role">Full-Time Software Developer Role</option>
+                      <option value="Backend & API Engineering">Backend &amp; API Engineering (Go / Python)</option>
+                      <option value="Full-Stack Web Application">Full-Stack Web Application</option>
+                      <option value="IoT & Environmental Telemetry">IoT &amp; Environmental Telemetry</option>
+                      <option value="Consulting / Freelance">Consulting / Freelance</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="fmessage" class="block text-xs font-medium text-zinc-400 mb-1.5">Message <span class="text-accent">*</span></label>
+                  <textarea id="fmessage" name="message" rows="4" placeholder="Tell me about the role, technical requirements, or project vision..." required
+                    class="w-full bg-zinc-800/90 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-500 focus:outline-none focus:border-accent transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="shimmer w-full bg-accent text-white font-display font-bold text-sm py-4 rounded-xl hover:bg-accent-light transition-all flex items-center justify-center gap-2">
+                  <span>Send Message</span>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-900 bg-white dark:bg-zinc-950 transition-colors">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div>
+        <a href="#hero" class="font-display font-bold text-lg text-zinc-900 dark:text-white">
+          milli<span class="text-accent">odhiambo</span>
+        </a>
+        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
+          © <span id="year"></span> Millicent Adhiambo Odhiambo. All rights reserved.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs text-zinc-500 dark:text-zinc-400">
+        <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/millicent-odhiambo-a306552a7/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">LinkedIn</a>
+        <a href="https://dev.to/mmicbee" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Dev.to</a>
+        <a href="Millicent Odhiambo_CV.pdf" download="Millicent_Odhiambo_CV.pdf" class="hover:text-accent transition-colors">Resume (PDF)</a>
+      </div>
+
+      <p class="text-xs text-zinc-400 dark:text-zinc-500">
+        Referenced style from <a href="https://themewagon.github.io/folio-tailwind/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors underline underline-offset-2">Folio Tailwind</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PROJECT QUICK VIEW MODAL
+       ═══════════════════════════════════════════════════════════════ -->
+  <div id="project-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto modal-overlay bg-black/70 transition-all">
+    <div class="bg-white dark:bg-zinc-900 rounded-2xl max-w-2xl w-full border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden relative my-8">
+      
+      <!-- Modal Close Button -->
+      <button id="modal-close-btn" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 flex items-center justify-center transition-colors" aria-label="Close modal">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Modal Banner Image -->
+      <div class="pf w-full h-52 sm:h-64 bg-zinc-900">
+        <img id="modal-banner" src="images/project-bionode.svg" alt="Project Banner" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="p-6 sm:p-8 space-y-5">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span id="modal-category" class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent font-semibold px-3 py-1 rounded-full border border-orange-200 dark:border-zinc-700"></span>
+            <span id="modal-award" class="text-xs text-zinc-500 dark:text-zinc-400 font-medium"></span>
+          </div>
+          <h3 id="modal-title" class="font-display font-bold text-2xl sm:text-3xl text-zinc-900 dark:text-white"></h3>
+        </div>
+
+        <p id="modal-description" class="text-sm sm:text-base text-zinc-600 dark:text-zinc-300 leading-relaxed"></p>
+
+        <!-- Technical Highlights List -->
+        <div>
+          <h4 class="text-xs uppercase font-semibold text-zinc-400 tracking-wider mb-3">Key Technical Highlights</h4>
+          <ul id="modal-highlights" class="space-y-2"></ul>
+        </div>
+
+        <!-- Tags List -->
+        <div>
+          <h4 class="text-xs uppercase font-semibold text-zinc-400 tracking-wider mb-2">Technologies &amp; Architecture</h4>
+          <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Action Links -->
+        <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between">
+          <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 shimmer bg-accent text-white font-medium text-sm px-6 py-2.5 rounded-full hover:bg-accent-light transition-colors">
+            <span>View Source on GitHub</span>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <button onclick="document.getElementById('project-modal').classList.add('hidden'); document.body.style.overflow='';" class="text-sm font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
+            Close window
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       TOAST NOTIFICATION COMPONENT
+       ═══════════════════════════════════════════════════════════════ -->
+  <div id="toast" class="bg-zinc-900 text-white border border-zinc-700 shadow-2xl px-5 py-3 rounded-xl flex items-center gap-3">
+    <span class="w-2 h-2 rounded-full bg-accent animate-ping"></span>
+    <span id="toast-message" class="text-sm font-medium">Notification</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+</body>
+</html>
