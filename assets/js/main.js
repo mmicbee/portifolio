@@ -10,7 +10,7 @@ const projectsData = {
     title: "Bionode — IoT Flood & Water Pollution Warning System",
     category: "Full Stack & IoT Telemetry",
     award: "Built at Kijani Hackathon 2024",
-    banner: "images/project-bionode.svg",
+    banner: "assets/images/project-bionode.svg",
     github: "https://github.com/mmicbee",
     demo: null,
     tags: ["Python", "FastAPI", "React", "TypeScript", "Redis", "IoT Sensors", "Tailwind CSS", "SSE"],
@@ -26,7 +26,7 @@ const projectsData = {
     title: "Idinex — Collaborative Idea-Cataloguing Platform",
     category: "Go Backend & Modular Frontend",
     award: "Active Core Project",
-    banner: "images/project-idinex.svg",
+    banner: "assets/images/project-idinex.svg",
     github: "https://github.com/mmicbee",
     demo: null,
     tags: ["Go", "REST API", "Vanilla JavaScript", "ES Modules", "Session Auth", "Security"],
@@ -42,7 +42,7 @@ const projectsData = {
     title: "AfriPay — Cross-Border Payments on Bitcoin Lightning",
     category: "FinTech & Distributed Systems",
     award: "Group Project & Financial Engineering",
-    banner: "images/project-afripay.svg",
+    banner: "assets/images/project-afripay.svg",
     github: "https://github.com/mmicbee/-bitcoin",
     demo: null,
     tags: ["Go", "Bitcoin Lightning", "REST APIs", "FinTech", "Currency Conversion", "Git Collaboration"],
@@ -58,7 +58,7 @@ const projectsData = {
     title: "Smart-House-Hunt — AI-Driven Kenyan Rental Engine",
     category: "Go Engine & Web Platform",
     award: "Real-World Kenyan Solution",
-    banner: "images/project-smarthouse.svg",
+    banner: "assets/images/project-smarthouse.svg",
     github: "https://github.com/mmicbee/Smart-house-hunt",
     demo: null,
     tags: ["Go", "REST APIs", "AI Filtering", "Kenya Real Estate", "Web", "PostgreSQL"],
@@ -74,7 +74,7 @@ const projectsData = {
     title: "CFTFIP — Care for the Future Integrated Project",
     category: "Modern Frontend Web Platform",
     award: "Community Impact Platform",
-    banner: "images/project-cftfip.svg",
+    banner: "assets/images/project-cftfip.svg",
     github: "https://github.com/mmicbee/CFTFIP",
     demo: null,
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "UI/UX", "Accessibility"],
@@ -90,7 +90,7 @@ const projectsData = {
     title: "Go Systems Engineering & Zone01 Algorithms",
     category: "Systems Programming & Low-Level Tooling",
     award: "Zone01 Kisumu Peer-Evaluated Excellence",
-    banner: "images/project-systems.svg",
+    banner: "assets/images/project-systems.svg",
     github: "https://github.com/mmicbee/push-swap",
     demo: null,
     tags: ["Go", "Data Structures", "Algorithms", "CLI Tools", "Memory Optimization", "Shell"],
@@ -242,8 +242,10 @@ function initNavbarAndScrollSpy() {
 /* ═══ 3. Intersection Observer for Scroll Reveals ═══ */
 function initRevealAnimations() {
   const reveals = document.querySelectorAll(".reveal");
+  const revealAll = () => reveals.forEach(el => el.classList.add("in"));
+
   if (!("IntersectionObserver" in window)) {
-    reveals.forEach(el => el.classList.add("in"));
+    revealAll();
     return;
   }
 
@@ -255,11 +257,22 @@ function initRevealAnimations() {
       }
     });
   }, {
-    threshold: 0.12,
-    rootMargin: "0px 0px -40px 0px"
+    threshold: 0,
+    rootMargin: "0px 0px -10% 0px"
   });
 
   reveals.forEach(el => observer.observe(el));
+
+  // Failsafe: never leave content hidden. If the observer never fires
+  // (unsupported/edge browsers, restored scroll positions, etc.) reveal
+  // anything still hidden shortly after load.
+  const failsafe = () => {
+    let hidden = 0;
+    reveals.forEach(el => { if (!el.classList.contains("in")) { el.classList.add("in"); hidden++; } });
+    if (hidden) observer.disconnect();
+  };
+  window.addEventListener("load", () => setTimeout(failsafe, 2500), { once: true });
+  setTimeout(failsafe, 4000);
 }
 
 /* ═══ 4. Project Category Filtering ═══ */

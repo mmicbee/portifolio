@@ -47,6 +47,18 @@
       }
     }
   </script>
+  <!-- Anti-Flash Theme Guard: applies stored/system theme before first paint -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var isDark = stored ? stored === 'dark'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.toggle('dark', isDark);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
 </head>
 
 <body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 antialiased selection:bg-accent selection:text-white">
@@ -59,7 +71,7 @@
       
       <!-- Brand Logo -->
       <a href="#hero" class="font-display font-bold text-xl sm:text-2xl tracking-tight relative z-10 flex items-center gap-1.5 group">
-        <span class="text-zinc-900 dark:text-white transition-colors">milli</span><span class="text-accent group-hover:text-accent-light transition-colors">odhiambo</span>
+        <span class="text-zinc-900 dark:text-white transition-colors">Millicent</span> <span class="text-accent group-hover:text-accent-light transition-colors">Odhiambo</span>
         <span class="text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-mono px-2 py-0.5 rounded-full ml-1 border border-zinc-200 dark:border-zinc-800">dev</span>
       </a>
 
@@ -368,7 +380,7 @@
           <article class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent md:row-span-2 flex flex-col justify-between" data-categories="iot backend">
             <div>
               <div class="pf w-full h-64 sm:h-72">
-                <img src="images/project-bionode.svg" alt="Bionode IoT Flood and Water Pollution Warning System" loading="lazy">
+                <img src="assets/images/project-bionode.svg" alt="Bionode IoT Flood and Water Pollution Warning System" loading="lazy">
               </div>
               <div class="p-7">
                 <div class="flex flex-wrap items-center gap-2 mb-4">
@@ -403,7 +415,7 @@
           <article class="project-card card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="backend">
             <div>
               <div class="pf w-full h-48 sm:h-52">
-                <img src="images/project-idinex.svg" alt="Idinex Idea Cataloguing Platform" loading="lazy">
+                <img src="assets/images/project-idinex.svg" alt="Idinex Idea Cataloguing Platform" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-3">
@@ -430,7 +442,7 @@
           <article class="project-card card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="fintech backend">
             <div>
               <div class="pf w-full h-48 sm:h-52">
-                <img src="images/project-afripay.svg" alt="AfriPay FinTech Lightning Payments" loading="lazy">
+                <img src="assets/images/project-afripay.svg" alt="AfriPay FinTech Lightning Payments" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-3">
@@ -457,7 +469,7 @@
           <article class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="backend iot">
             <div>
               <div class="pf w-full h-48 sm:h-52">
-                <img src="images/project-smarthouse.svg" alt="Smart House Hunt Kenya" loading="lazy">
+                <img src="assets/images/project-smarthouse.svg" alt="Smart House Hunt Kenya" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-3">
@@ -484,7 +496,7 @@
           <article class="project-card card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="frontend">
             <div>
               <div class="pf w-full h-48 sm:h-52">
-                <img src="images/project-cftfip.svg" alt="Care for the Future Integrated Project" loading="lazy">
+                <img src="assets/images/project-cftfip.svg" alt="Care for the Future Integrated Project" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-3">
@@ -511,7 +523,7 @@
           <article class="project-card card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="fintech backend">
             <div>
               <div class="pf w-full h-48 sm:h-52">
-                <img src="images/project-systems.svg" alt="Go Systems Programming at Zone01" loading="lazy">
+                <img src="assets/images/project-systems.svg" alt="Go Systems Programming at Zone01" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-3">
@@ -656,7 +668,7 @@
           <article class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
             <div>
               <div class="pf w-full h-44">
-                <img src="images/blog-carbon.png" alt="How Technology Can Help SMEs Measure Their Carbon Emissions" loading="lazy">
+                <img src="assets/images/blog-carbon.webp" alt="How Technology Can Help SMEs Measure Their Carbon Emissions" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
@@ -682,7 +694,7 @@
           <article class="reveal d2 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
             <div>
               <div class="pf w-full h-44">
-                <img src="images/blog-compilation.png" alt="Compilation 1.0" loading="lazy">
+                <img src="assets/images/blog-compilation.webp" alt="Compilation 1.0" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
@@ -708,7 +720,7 @@
           <article class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
             <div>
               <div class="pf w-full h-44">
-                <img src="images/blog-dns.png" alt="Gaslighted Into Learning DNS" loading="lazy">
+                <img src="assets/images/blog-dns.webp" alt="I Was Basically Gaslighted Into Learning DNS... and I'm Glad I Was" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
@@ -716,7 +728,7 @@
                   <span>Jul 12, 2026 • 3m</span>
                 </div>
                 <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors leading-snug">
-                  I Was Basically Gaslighted Into Learning DNS...
+                  I Was Basically Gaslighted Into Learning DNS... and I'm Glad I Was
                 </h3>
                 <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
                   A humorous yet technical journey into resolvers, authoritative nameservers, propagation caching, and understanding the web's phonebook.
@@ -734,7 +746,7 @@
           <article class="reveal d4 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between">
             <div>
               <div class="pf w-full h-44">
-                <img src="images/blog-bootcamp.png" alt="My First Day at a Developer Bootcamp" loading="lazy">
+                <img src="assets/images/blog-bootcamp.webp" alt="My First Day at a Developer Bootcamp: What I Experienced as a Beginner" loading="lazy">
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between text-xs text-zinc-400 mb-3">
@@ -742,7 +754,7 @@
                   <span>Jun 14, 2026 • 2m</span>
                 </div>
                 <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors leading-snug">
-                  My First Day at a Developer Bootcamp
+                  My First Day at a Developer Bootcamp: What I Experienced as a Beginner
                 </h3>
                 <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
                   Real experiences navigating the initial steep learning curve, peer-to-peer coding pressures, and building psychological safety.
@@ -772,7 +784,7 @@
           <div class="reveal order-2 md:order-1 flex justify-center">
             <div class="relative w-full max-w-sm">
               <div class="pf aspect-square w-full rounded-3xl shadow-xl border-4 border-white dark:border-zinc-800">
-                <img src="images/profile-about.jpg" alt="Millicent Odhiambo" loading="lazy" class="object-cover object-center">
+                <img src="assets/images/profile-about.jpg" alt="Millicent Odhiambo" loading="lazy" class="object-cover object-center">
               </div>
               <div class="absolute -bottom-5 -right-5 bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-xl border border-zinc-200 dark:border-zinc-700 hidden sm:block">
                 <p class="text-xs text-zinc-400 uppercase font-semibold">Location</p>
@@ -995,10 +1007,10 @@
       
       <div>
         <a href="#hero" class="font-display font-bold text-lg text-zinc-900 dark:text-white">
-          milli<span class="text-accent">odhiambo</span>
+          Millicent <span class="text-accent">Odhiambo</span>
         </a>
         <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-          © <span id="year"></span> Millicent Adhiambo Odhiambo. All rights reserved.
+          © <span id="year"></span> Millicent Odhiambo. All rights reserved.
         </p>
       </div>
 
@@ -1006,7 +1018,7 @@
         <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">GitHub</a>
         <a href="https://www.linkedin.com/in/millicent-odhiambo-a306552a7/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">LinkedIn</a>
         <a href="https://dev.to/mmicbee" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Dev.to</a>
-        <a href="Millicent Odhiambo_CV.pdf" download="Millicent_Odhiambo_CV.pdf" class="hover:text-accent transition-colors">Resume (PDF)</a>
+        <a href="assets/Millicent Odhiambo_CV.pdf" download="Millicent_Odhiambo_CV.pdf" class="hover:text-accent transition-colors">Resume (PDF)</a>
       </div>
 
       <p class="text-xs text-zinc-400 dark:text-zinc-500">
@@ -1029,7 +1041,7 @@
 
       <!-- Modal Banner Image -->
       <div class="pf w-full h-52 sm:h-64 bg-zinc-900">
-        <img id="modal-banner" src="images/project-bionode.svg" alt="Project Banner" class="w-full h-full object-cover">
+        <img id="modal-banner" src="assets/images/project-bionode.svg" alt="Project Banner" class="w-full h-full object-cover">
       </div>
 
       <!-- Modal Content Body -->
@@ -1081,6 +1093,6 @@
   </div>
 
   <!-- Main JavaScript File -->
-  <script src="main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

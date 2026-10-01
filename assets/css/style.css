@@ -164,17 +164,25 @@ body::before {
 }
 
 /* ═══ Reveal Animations on Scroll ═══ */
-.reveal {
+/* Only hide content when JS is present, so a script failure can never
+   leave the page blank. */
+.js .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
-.reveal.in {
+.js .reveal.in {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Theme icons: correct one shows by default, JS keeps it in sync */
+.icon-sun, .icon-moon { display: none; }
+.icon-moon { display: block; }
+.dark .icon-moon { display: none; }
+.dark .icon-sun { display: block; }
 
 .d1 { transition-delay: 0.08s; }
 .d2 { transition-delay: 0.16s; }
