@@ -11,9 +11,9 @@ Inspired by the design aesthetics of [Folio Tailwind](https://themewagon.github.
 - **Folio-Tailwind Aesthetic**: Minimalist typography (Google Fonts *PT Sans* & *DM Sans*), subtle noise overlay texture, custom scrollbars, and fluid card hover physics.
 - **Dark / Light Theme Toggle**: Persistent mode switcher syncing with user preference and `localStorage`.
 - **Interactive Project Showcase**:
-  - Filter by category (*All*, *Backend & APIs*, *IoT & Full-Stack*, *FinTech & Systems*).
+  - Filter by category (*All*, *Backend & APIs*, *Frontend & Web*, *FinTech & Systems*).
   - Quick View Modal with architectural breakdowns, technical highlights, and direct GitHub links.
-  - Featured projects: **Bionode** (IoT flood & pollution warning from Kijani Hackathon), **Idinex** (Go & ES Modules idea catalog), **AfriPay** (Bitcoin Lightning cross-border payments), **Smart-House-Hunt** (AI property search in Kenya), **CFTFIP**, and **Zone01 Systems & Algorithms** (*push-swap*, *groupie-tracker*, *go-reloaded*).
+  - Featured projects: **AfriPay** (Bitcoin Lightning cross-border payments), **CFTFIP** (community impact frontend platform), and **Zone01 Systems & Algorithms** (*push-swap*, *groupie-tracker*, *go-reloaded*).
 - **Live Technical Writing Section**:
   - Direct links to real published articles on [Dev.to](https://dev.to/mmicbee):
     - *How Technology Can Help SMEs Measure Their Carbon Emissions*

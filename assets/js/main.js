@@ -6,38 +6,6 @@
 
 // Project Data Store for Quick View Modals
 const projectsData = {
-  bionode: {
-    title: "Bionode — IoT Flood & Water Pollution Warning System",
-    category: "Full Stack & IoT Telemetry",
-    award: "Built at Kijani Hackathon 2024",
-    banner: "assets/images/project-bionode.svg",
-    github: "https://github.com/mmicbee",
-    demo: null,
-    tags: ["Python", "FastAPI", "React", "TypeScript", "Redis", "IoT Sensors", "Tailwind CSS", "SSE"],
-    description: `An end-to-end IoT and software solution designed to safeguard vulnerable communities from flash floods and hazardous water contamination. Bionode connects to a specialized "KijaniBox" hardware sensor hub to stream live water-level and turbidity readings in real time.`,
-    highlights: [
-      "Built a high-performance Python (FastAPI) backend implementing automated diversion-valve triggers with hysteresis to prevent oscillation.",
-      "Engineered real-time telemetry streaming via Server-Sent Events (SSE) and Redis-backed alert queuing.",
-      "Designed resilient SQLAlchemy data layer for sensor logging, anomaly spikes, and satellite soil-saturation data integration.",
-      "Constructed a responsive, clean real-time monitoring dashboard in React, TypeScript, and Tailwind CSS."
-    ]
-  },
-  idinex: {
-    title: "Idinex — Collaborative Idea-Cataloguing Platform",
-    category: "Go Backend & Modular Frontend",
-    award: "Active Core Project",
-    banner: "assets/images/project-idinex.svg",
-    github: "https://github.com/mmicbee",
-    demo: null,
-    tags: ["Go", "REST API", "Vanilla JavaScript", "ES Modules", "Session Auth", "Security"],
-    description: `A collaborative idea-cataloguing and evaluation platform where innovators can submit, browse, categorize, and collectively refine ideas. Built with an emphasis on high performance, clean architecture, and framework-free frontend agility.`,
-    highlights: [
-      "Developed a robust Go backend featuring a full CRUD ideas engine, categorization, and relational SQLite/PostgreSQL schemas.",
-      "Engineered a custom authentication service layer handling registration, encrypted credentials, login, and secure session management.",
-      "Built a modular frontend using vanilla JavaScript (ES Modules), without heavy framework bloat.",
-      "Implemented client-side form validation, an interactive password strength estimation algorithm, and dynamic UI state feedback."
-    ]
-  },
   afripay: {
     title: "AfriPay — Cross-Border Payments on Bitcoin Lightning",
     category: "FinTech & Distributed Systems",
@@ -52,22 +20,6 @@ const projectsData = {
       "Built Go service interfaces for automated local-currency exchange conversion quotes (e.g., KES, GHS, NGN).",
       "Researched and designed heuristic fraud-detection filters and transaction telemetry.",
       "Collaborated using rigorous Git branching, code reviews, and API documentation workflows in an agile team."
-    ]
-  },
-  smarthouse: {
-    title: "Smart-House-Hunt — AI-Driven Kenyan Rental Engine",
-    category: "Go Engine & Web Platform",
-    award: "Real-World Kenyan Solution",
-    banner: "assets/images/project-smarthouse.svg",
-    github: "https://github.com/mmicbee/Smart-house-hunt",
-    demo: null,
-    tags: ["Go", "REST APIs", "AI Filtering", "Kenya Real Estate", "Web", "PostgreSQL"],
-    description: `An intelligent property search and rental match platform designed specifically for Kenyan urban hubs like Nairobi and Kisumu. It solves discovery friction, predatory broker fees, and unreliable listing information through verified data indexing.`,
-    highlights: [
-      "Architected performant Go backend services for property indexing, locality filtering, and user search queries.",
-      "Integrated smart matching filters based on budget, commuter radius, amenities, and security ratings.",
-      "Developed structured data storage models for property managers and prospective tenants.",
-      "Focused on fast mobile accessibility for Kenyan mobile internet speeds."
     ]
   },
   cftfip: {

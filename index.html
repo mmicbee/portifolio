@@ -368,7 +368,7 @@
           <div class="reveal d2 flex flex-wrap gap-2">
             <button class="filter-btn active text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="all">All</button>
             <button class="filter-btn text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="backend">Backend &amp; APIs</button>
-            <button class="filter-btn text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="iot">IoT &amp; Full-Stack</button>
+            <button class="filter-btn text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="frontend">Frontend &amp; Web</button>
             <button class="filter-btn text-xs font-medium px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all" data-filter="fintech">FinTech &amp; Systems</button>
           </div>
         </div>
@@ -376,70 +376,8 @@
         <!-- Project Grid -->
         <div class="grid md:grid-cols-2 gap-7">
 
-          <!-- PROJECT 1: BIONODE (Featured Hero Card) -->
-          <article class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent md:row-span-2 flex flex-col justify-between" data-categories="iot backend">
-            <div>
-              <div class="pf w-full h-64 sm:h-72">
-                <img src="assets/images/project-bionode.svg" alt="Bionode IoT Flood and Water Pollution Warning System" loading="lazy">
-              </div>
-              <div class="p-7">
-                <div class="flex flex-wrap items-center gap-2 mb-4">
-                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">IoT &amp; Telemetry</span>
-                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Python / FastAPI</span>
-                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Redis + SSE</span>
-                </div>
-                <h3 class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-2">Bionode — IoT Flood &amp; Pollution Early Warning System</h3>
-                <p class="text-xs font-semibold text-accent mb-3">Built at Kijani Hackathon 2024</p>
-                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
-                  An IoT-based early warning system using a custom "KijaniBox" sensor to stream live water-level and turbidity readings. Built the FastAPI backend implementing automated diversion-valve triggers with hysteresis, pollution-spike detection, Redis alert queuing, and real-time Server-Sent Events dashboard.
-                </p>
-                
-                <ul class="text-xs text-zinc-500 dark:text-zinc-400 space-y-2 mb-6">
-                  <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Automated diversion-valve logic with hysteresis</li>
-                  <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Real-time streaming via Server-Sent Events (SSE)</li>
-                  <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Satellite soil-saturation &amp; SQLAlchemy telemetry models</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="px-7 pb-7 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
-              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="bionode">
-                <span>View deep dive</span>
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </button>
-              <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
-            </div>
-          </article>
-
-          <!-- PROJECT 2: IDINEX -->
-          <article class="project-card card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="backend">
-            <div>
-              <div class="pf w-full h-48 sm:h-52">
-                <img src="assets/images/project-idinex.svg" alt="Idinex Idea Cataloguing Platform" loading="lazy">
-              </div>
-              <div class="p-6">
-                <div class="flex flex-wrap gap-2 mb-3">
-                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">Go Backend</span>
-                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">REST APIs</span>
-                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">ES Modules</span>
-                </div>
-                <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Idinex — Idea Cataloguing Platform</h3>
-                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-                  A collaborative idea catalog where users submit, browse, and refine ideas together. Implemented a robust Go backend with full CRUD endpoints and an auth service layer, plus a vanilla JavaScript ES modules frontend with a password strength meter and dynamic validation.
-                </p>
-              </div>
-            </div>
-            <div class="px-6 pb-6 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
-              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="idinex">
-                <span>View deep dive</span>
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </button>
-              <a href="https://github.com/mmicbee" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
-            </div>
-          </article>
-
-          <!-- PROJECT 3: AFRIPAY -->
-          <article class="project-card card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="fintech backend">
+          <!-- PROJECT 1: AFRIPAY -->
+          <article class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="fintech backend">
             <div>
               <div class="pf w-full h-48 sm:h-52">
                 <img src="assets/images/project-afripay.svg" alt="AfriPay FinTech Lightning Payments" loading="lazy">
@@ -465,34 +403,7 @@
             </div>
           </article>
 
-          <!-- PROJECT 4: SMART HOUSE HUNT -->
-          <article class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="backend iot">
-            <div>
-              <div class="pf w-full h-48 sm:h-52">
-                <img src="assets/images/project-smarthouse.svg" alt="Smart House Hunt Kenya" loading="lazy">
-              </div>
-              <div class="p-6">
-                <div class="flex flex-wrap gap-2 mb-3">
-                  <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full font-medium">Go Platform</span>
-                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">AI Matching</span>
-                  <span class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 px-3 py-1 rounded-full">Kenya</span>
-                </div>
-                <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-2">Smart-House-Hunt — AI Rental Platform</h3>
-                <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
-                  An AI-powered house rental platform tailored for the Kenyan market. Eliminates deceptive agent markups and unreliable listings by providing verified property indexing, proximity mapping, and streamlined Go endpoints.
-                </p>
-              </div>
-            </div>
-            <div class="px-6 pb-6 flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800/80 pt-4">
-              <button class="view-project-btn inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-light transition-colors" data-project-id="smarthouse">
-                <span>View deep dive</span>
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </button>
-              <a href="https://github.com/mmicbee/Smart-house-hunt" target="_blank" rel="noopener noreferrer" class="text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors nl">GitHub Repo ↗</a>
-            </div>
-          </article>
-
-          <!-- PROJECT 5: CFTFIP -->
+          <!-- PROJECT 2: CFTFIP -->
           <article class="project-card card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="frontend">
             <div>
               <div class="pf w-full h-48 sm:h-52">
@@ -519,7 +430,7 @@
             </div>
           </article>
 
-          <!-- PROJECT 6: GO SYSTEMS PROGRAMMING & ZONE01 -->
+          <!-- PROJECT 3: GO SYSTEMS PROGRAMMING & ZONE01 -->
           <article class="project-card card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 hover:border-accent flex flex-col justify-between" data-categories="fintech backend">
             <div>
               <div class="pf w-full h-48 sm:h-52">
@@ -1041,7 +952,7 @@
 
       <!-- Modal Banner Image -->
       <div class="pf w-full h-52 sm:h-64 bg-zinc-900">
-        <img id="modal-banner" src="assets/images/project-bionode.svg" alt="Project Banner" class="w-full h-full object-cover">
+        <img id="modal-banner" src="assets/images/project-afripay.svg" alt="Project Banner" class="w-full h-full object-cover">
       </div>
 
       <!-- Modal Content Body -->
